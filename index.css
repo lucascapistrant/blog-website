@@ -1,5 +1,3 @@
-/* font-family: 'Gabarito', sans-serif;
-font-family: 'Syne', sans-serif; */
 
 *{
     box-sizing: border-box;
@@ -27,12 +25,10 @@ html {
 body {
     background: var(--background);
     color: var(--text-body);
-    display: flex;
     font-family: 'Rubik', sans-serif;
 }
 
 /* Typeography */
-
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-family: 'Gabarito', sans-serif;
@@ -48,8 +44,11 @@ h3 {
     font-size: 2.5rem;
 }
 
-/* Hero */
+p {
+    font-size: 1.5rem;
+}
 
+/* Hero */
 .hero {
     display: flex;
     align-items: center;
@@ -72,4 +71,11 @@ h3 {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* Hero Banner */
+
+.hero--banner p {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.5rem;
 }
