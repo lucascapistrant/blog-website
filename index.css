@@ -28,6 +28,7 @@ body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 /* Typeography */
@@ -86,6 +87,10 @@ p {
 }
 
 /* Articles */
+.article-container {
+    display: grid;
+    justify-items: center; 
+}
 
 .article {
     position: relative;
@@ -93,6 +98,7 @@ p {
     border-radius: 20px;
     border: 2px solid var(--primary);
     margin: 10px 0;
+    max-width: 600px;
 }
 
 .article__date {
@@ -128,8 +134,16 @@ p {
     opacity: .7;
 }
 
+@media screen and (min-width: 720px) {
+    .article-container {
+        grid-template-columns: 50% 50%;
+    }
+}
+
 /* Footer */
 .footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     background-color: var(--primary);
     height: 4rem;
@@ -139,9 +153,14 @@ p {
 }
 
 .footer__text {
-    font-size: 2.5rem;
-    color: var(--secondary);
+    font-size: 2rem;
     text-decoration: none;
+    color: var(--text-body);
+}
+
+.footer__text--link {
+    margin-left: 10px;
+    color: var(--secondary);
 }
 
 /* Dock */

@@ -35,3 +35,13 @@ upBtn.addEventListener('click', () => {
   console.log('hi')
   window.scrollTo(0, 0);
 })
+
+// footer sizing and text logic
+const footerText = document.getElementById('footer-text');
+
+window.addEventListener('resize', () => {
+  if(window.innerWidth < 740) {
+    footerText.style.display = 'none'
+  }
+  else footerText.style.display = 'block';
+});
