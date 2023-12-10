@@ -20,7 +20,7 @@
     <div id="dock" class="dock">
       <h1 class="hero__name dock__title">Lucas Capistrant</h1>
       <div class="dock__btn-group">
-        <div id="dock-mode-btn" class="dock__btn dock__btn-modes">
+        <div class="dock__btn dock__btn-modes">
           <i class="fa-solid fa-sun"></i>
         </div>
         <div id="dock-up-btn" class="dock__btn dock__btn-up">
@@ -31,9 +31,12 @@
     <header class="hero">
       <h1 class="hero__name">Lucas Capistrant</h1>
       <h2 class="hero__tag">blog</h2>
+      <div class="dock__btn dock__btn-modes">
+        <i class="fa-solid fa-sun"></i>
+      </div>
     </header>
-    <div class="hero--banner">
-      <p>
+    <div class="hero-banner">
+      <p class="hero-banner__text">
         Hey there, I'm Lucas—a junior web developer and programmer navigating
         the world of programming. This site is my digital journal where I share
         weekly articles highlighting my latest discoveries, recount the coding
@@ -41,6 +44,7 @@
         casual vibe; these posts are more about my learning adventure than
         aiming to be super technical or formal. Enjoy the journey with me!
       </p>
+      <img class="hero-banner__img" src="/images/" alt="A picture of Lucas" />
     </div>
     <div class="article-container">
       <div class="article">
@@ -110,8 +114,7 @@
         <p class="article__desc">Week Progress, other items, etc</p>
       </div>
     </div>
-    <div style="height: 40px"></div>
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <p id="footer-text" class="footer__text">
         Need to Contact Me? You can message my Email,
       </p>

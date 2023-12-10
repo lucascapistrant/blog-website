@@ -24,19 +24,22 @@ function dockBehavior() {
 }
 
 // dock buttons
-const modesBtn = document.getElementById('dock-mode-btn');
+const modesBtns = document.getElementsByClassName('dock__btn-modes');
 const upBtn = document.getElementById('dock-up-btn');
 
-modesBtn.addEventListener('click', () => {
-  toggleTheme();
-})
+Array.from(modesBtns).forEach(element => {
+  element.addEventListener('click', () => {
+    toggleTheme();
+  });
+});
 
 upBtn.addEventListener('click', () => {
   console.log('hi')
   window.scrollTo(0, 0);
 })
 
-// footer sizing and text logic
+// footer logic
+const footer = document.getElementById('footer');
 const footerText = document.getElementById('footer-text');
 
 window.addEventListener('resize', () => {
