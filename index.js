@@ -42,9 +42,12 @@ upBtn.addEventListener('click', () => {
 const footer = document.getElementById('footer');
 const footerText = document.getElementById('footer-text');
 
-window.addEventListener('resize', () => {
+window.addEventListener('resize', footerLogic)
+
+function footerLogic() {
+  console.log('hello')
   if(window.innerWidth < 740) {
     footerText.style.display = 'none'
   }
   else footerText.style.display = 'block';
-});
+}
