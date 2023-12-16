@@ -52,6 +52,11 @@ p {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    outline: none;
+}
+
 /* Hero */
 .hero {
     display: flex;
@@ -80,6 +85,7 @@ p {
 .hero .dock__btn {
     position: absolute;
     right: 0;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 720px) {
@@ -156,6 +162,7 @@ p {
     margin: 10px;
     max-width: 600px;
     height: fit-content;
+    cursor: pointer;
 }
 
 .article__header {
@@ -184,6 +191,10 @@ p {
     padding: 10px;
 }
 
+.article__name {
+    color: var(--text-body);
+}
+
 .article__desc {
     background: rgba(255, 255, 255, .3);
     margin: 0;
@@ -195,6 +206,7 @@ p {
 .article__starter {
     padding: 0 10px 10px;
     opacity: .7;
+    color: var(--text-body);
 }
 
 @media screen and (min-width: 720px) {
@@ -282,3 +294,23 @@ p {
 .hidden {
     display: none;
 }
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+  }

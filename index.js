@@ -42,7 +42,8 @@ upBtn.addEventListener('click', () => {
 const footer = document.getElementById('footer');
 const footerText = document.getElementById('footer-text');
 
-window.addEventListener('resize', footerLogic)
+window.addEventListener('resize', footerLogic);
+footerLogic();
 
 function footerLogic() {
   console.log('hello')
